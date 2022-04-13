@@ -1,0 +1,29 @@
+﻿<mah:MetroWindow x:Class="DBClient.MessageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"    
+        xmlns:local="clr-namespace:DBClient"
+        mc:Ignorable="d"
+        Title="MessageWindow" Height="450" Width="700">
+    <Grid Background="#FF1D1D1D">
+        <Image x:Name="member_profilePicture" HorizontalAlignment="Left" Height="100" Margin="62,10,0,0" VerticalAlignment="Top" Width="100">
+            
+        </Image>
+        <Label x:Name="member_Name" Content="Label" Margin="212,10,-102,350" Foreground="White" FontSize="18"/>
+        <TextBox x:Name="message_Text" IsReadOnly="True" HorizontalAlignment="Left" Margin="218,62,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="472" Height="347"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10,95,487,22">
+            <StackPanel Height="272" Width="193">
+                <Button x:Name="btn_CopyId" Margin="5" Content="Copiar Id"/>
+                <Button x:Name="btn_Save" Margin="5" Content="GUARDAR"/>
+                <Button x:Name="btn_MemberInfo" Margin="5" Content="MIEMBRO"/>
+                <Button x:Name="btn_ChannelInfo" Margin="5" Content="CANAL"/>
+                <Button x:Name="btn_GuildInfo" Margin="5" Content="SERVIDOR"/>
+                <Button x:Name="btn_Delete" Margin="5" Content="Eliminar" Background="#FFB03E2C" IsCancel="True"/>
+                <Button x:Name="btn_Edit" Margin="5" Content="EDITAR" Background="#FF268351"/>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</mah:MetroWindow>

@@ -1,0 +1,1 @@
+C:\Users\quiqu\source\repos\DiscordBotClient\UWP\UWP.csproj;x86

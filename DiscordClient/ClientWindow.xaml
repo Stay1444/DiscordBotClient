@@ -1,0 +1,33 @@
+﻿<mah:MetroWindow x:Class="DBClient.ClientWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                 xmlns:local="clr-namespace:DBClient"
+                 mc:Ignorable="d"
+                 Title="Client" Height="600" Width="1200" >
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="31*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#FF1B1B1B">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+                <Rectangle Fill="#FF0E0E0E"></Rectangle>
+                <Image Margin="10" x:Name="homeButton" Source="assets/discord.png">
+
+                </Image>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" >
+                    <StackPanel x:Name="StackPanel_Servers">
+                
+                    </StackPanel>
+                </ScrollViewer>
+        </Grid>
+        <Frame x:Name="ContentView" Grid.Column="1"/>
+    </Grid>
+</mah:MetroWindow>
